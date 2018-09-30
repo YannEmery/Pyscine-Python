@@ -197,3 +197,5 @@ else:
 
     #On affiche le jour de la semaine
     print("Le jour de la semaine est : ",result)
+
+#Yann EMERY
