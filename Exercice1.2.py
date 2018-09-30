@@ -165,6 +165,9 @@ if moisnumero == False:
 date = jour_input + "/" + moisnumero + "/" + annee_input
 if VerifDate(date) == 0:
     sys.exit()
+elif int(annee_input) < 1600 or int(annee_input) > 2199:
+    print("La date doit se situer entre 1600 et 2200")
+    sys.exit()
 else:
     #On garde les deux derniers chiffres de l'année
     annee = annee_input[2:]
@@ -193,4 +196,4 @@ else:
     result = JourSemaine(ajout)
 
     #On affiche le jour de la semaine
-    print(result)
+    print("Le jour de la semaine est : ",result)
